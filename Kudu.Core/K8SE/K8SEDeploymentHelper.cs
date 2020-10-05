@@ -165,7 +165,7 @@ namespace Kudu.Core.K8SE
                     {
                         PackageRef = new PackageReference
                         {
-                            BuildMetadata = JsonConvert.SerializeObject(buildMetadata).Replace("\"", "'")
+                            BuildMetadata = JsonConvert.SerializeObject(buildMetadata).Replace("\"", "@")
                         }
                     }
                 }
