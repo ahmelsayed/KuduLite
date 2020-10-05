@@ -165,7 +165,7 @@ namespace Kudu.Core.K8SE
                     {
                         PackageRef = new PackageReference
                         {
-                            BuildVersion = buildMetadata
+                            BuildMetadata = HttpUtility.JavaScriptStringEncode(JsonConvert.SerializeObject(buildMetadata)).Replace("\\","\\\\")
                         }
                     }
                 }
