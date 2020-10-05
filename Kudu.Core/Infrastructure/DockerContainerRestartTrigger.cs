@@ -38,10 +38,10 @@ namespace Kudu.Core.Infrastructure
                 {
                     AppName = appName,
                     BuildVersion = buildNumber,
-                    AppSubPath = appSubPath
+                    // AppSubPath = appSubPath
                 };
 
-                //Only for function apps functionTriggers will be non-null/non-empty 
+                //Only for function apps functionTriggers will be non-null/non-empty
                 if (functionTriggers?.Any() == true)
                 {
                     K8SEDeploymentHelper.UpdateFunctionAppTriggers(appName, functionTriggers, buildMetadata);

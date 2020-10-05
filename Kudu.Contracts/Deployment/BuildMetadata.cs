@@ -9,8 +9,5 @@ namespace Kudu.Contracts.Deployment
 
         [JsonProperty(PropertyName = "buildVersion")]
         public string BuildVersion;
-
-        [JsonProperty(PropertyName = "appSubPath")]
-        public string AppSubPath;
     }
 }
